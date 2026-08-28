@@ -10,12 +10,11 @@ class Employee{
         this.salary = salary;
         this.isIntern = false;
     }
-    Employee(String empId, String empName){
-        this.empId = empId;
-        this.empName = empName;
-        this.salary = 0;
+    Employee(String empId, String empName) {
+        this(empId, empName, 0);
         this.isIntern = true;
     }
+    
     void printDetails(){
            System.out.println("E-" + empId + " | " + empName + " | Rs " + salary + " | Intern: " + isIntern);
     }
